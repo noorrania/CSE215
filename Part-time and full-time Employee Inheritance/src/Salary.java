@@ -27,7 +27,7 @@ class Person{
 	public void setAddress(String address) {
 		this.address = address;
 	}	
-	
+
 }
 class Employee extends Person{
 	private String department;
@@ -49,7 +49,7 @@ class Employee extends Person{
 	public void setDesignation(String designation) {
 		this.designation = designation;
 	}
-	
+
 }
 class PartTimeEmployee extends Employee{
 	private double hours;
@@ -76,12 +76,12 @@ class PartTimeEmployee extends Employee{
 	public String toString() {
 		return "PartTimeEmployeee [hours=" + hours + ", rate=" + rate + "]";
 	}
-public double salary(double hour,double rate){
-	double salary=hour*rate*4;
-	
-	return salary;
-}	
-	
+	public double salary(double hour,double rate){
+		double salary=hour*rate*4;
+
+		return salary;
+	}	
+
 }
 class FullTimeEmployee extends Employee{
 	private double basic;
@@ -109,13 +109,13 @@ class FullTimeEmployee extends Employee{
 		return "FullTimeEmployee [basic=" + basic + ", allowance=" + allowance + "]";
 	}
 	public double salary(double basic,double allowance) {
-	    allowance=allowance/100;
+		allowance=allowance/100;
 		double salary=basic+(allowance*basic);
 		return salary;
 	}
-	
-	
-	
+
+
+
 }
 public class Salary {
 
